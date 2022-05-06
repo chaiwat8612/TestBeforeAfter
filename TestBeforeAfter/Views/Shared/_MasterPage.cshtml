@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>@Html.Raw(ViewBag.Title)</title>
+
+    @RenderSection("AdditionalMeta", required: false)
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <script src="~/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
